@@ -13,6 +13,7 @@ If there's any portion of this that isn’t familiar to you, don’t spend too m
 
 GitHub repository: https://github.com/leocjj/restful_API.git
 
+Docker respository: https://hub.docker.com/r/leocjj/restful_api
 
 
 ## Acceptance:
@@ -51,11 +52,24 @@ https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kines
 
 
 
-# Installation
+# First time installations
+Install Docker Desktop
+	https://www.docker.com/products/docker-desktop
+
+Install git for windows
+	https://git-scm.com/downloads
+
+Vefication of Docker installation
+	
+	docker version
+	docker run hello-world
+
+# Instalation of restful API in a Docker container
 	git clone "https://github.com/leocjj/restful_API"`
 	cd restful_API
 	docker build -t restfulapi .
 	docker run -dp 5000:5000 --name restfulapi restfulapi
+
 
 
 # Examples of use
@@ -63,13 +77,36 @@ To call API
 
 	http://localhost:5000/
 
-To stop container
+# Reinstallation
+In case of a new code version, the old container must be stopped and deleted before a new installation.
 
-	docker stop restfulapi
+1. Stop actual container
 
-To delete container
+		docker stop restfulapi
 
-	docker rm restfulapi
+2. Delete actual container
+		
+		docker rm restfulapi
+
+3. Follow installation instructions
+
+# Additional notes on Docker
+To see Docker images available
+
+	docker image ls
+
+To see Docker containers
+
+	docker ps [-a]
+
+To publish in Docker
+
+	docker tag restfulapi leocjj/restful_api
+	docker push leocjj/restful_api
+
+Docker Pull Command
+
+	docker pull leocjj/restful_api
 
 
 # Bugs
