@@ -1,4 +1,4 @@
-# Restful API using
+# Restful API
 Restful API using our Core Technologies
 
 ![](hbnb-logo.png)
