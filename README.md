@@ -17,7 +17,6 @@ If there's any portion of this that isn’t familiar to you, don’t spend too m
 
 GitHub repository: https://github.com/leocjj/restful_API.git
 
-Collaborators: luisa.sepulveda and edgar.forero
 
 
 ## Acceptance:
@@ -56,21 +55,34 @@ https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kines
 
 
 
-## Installation
-* Clone this repository: `git clone "https://github.com/leocjj/restful_API"`
+# Installation
+	git clone "https://github.com/leocjj/restful_API"`
+	cd restful_API
+	docker build -t restfulapi .
+	docker run -dp 5000:5000 --name restfulapi restfulapi
 
 
+# Examples of use
+To call API
+
+	http://localhost:5000/
+
+To stop container
+
+	docker stop restfulapi
+
+To delete container
+
+	docker rm restfulapi
 
 
-## Examples of use
-```
-localhost
-```
-
-
-## Bugs
+# Bugs
 No known bugs at this time. 
 
 
-## Authors
+# Authors
 Leonardo Calderon - [email](mailto://leonardo.calderon@endava.com) / [Github](https://github.com/leocjj) / [Twitter](https://twitter.com/leocj)  
+
+# Collaborators
+* luisa.sepulveda
+* edgar.forero
