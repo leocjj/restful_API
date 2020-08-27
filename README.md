@@ -1,11 +1,7 @@
-# Restful API usin
-restful API using our Core Technologies
+# Restful API
+Restful API using our Core Technologies
 
 ![](hbnb-logo.png)
-
-# AirBnB Clone - The Console
-
-![](hbnb-stack.png)
 
 ## Problem Statement: 
 
