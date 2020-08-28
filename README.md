@@ -108,6 +108,16 @@ Docker Pull Command
 
 	docker pull leocjj/restful_api
 
+Bash CLI inside the container
+
+	docker exec -it restfulapi /bin/bash
+
+
+# Test in localhost
+
+	pip install requests
+	python test.py [method]
+
 
 # Bugs
 No known bugs at this time. 
